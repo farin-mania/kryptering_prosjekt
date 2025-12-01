@@ -5,14 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="shortcut icon" href="./bilder/encryption-icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="index.css">
     <script src="index.js" defer></script>
 </head>
 
 <body>
     <main>
-        <section>
-            
+        <section id="encrypted-section">
+            <form id="unencrypted">
+                <textarea id="unencrypted-textbox" name="message" type="text"></textarea>
+            </form>
+
+            <section id="middle">
+                <div class="dropdown">
+                    <button class="dropbtn">Velg krypteringsmetode</button>
+                    <div class="dropdown-content">
+                        <a href="#">Cæsar</a>
+                    </div>
+                </div>
+
+                <button id="bruteforce-btn">
+                    Bruteforce
+                </button>
+                <input type="number" id="shiftAmount" min="1" value="10">
+
+            </section>
+
+            <textarea id="output" readonly></textarea>
+        </section>
+
+        <section id="guess-container">
+            <!-- Fylles ut av js -->
         </section>
 
     </main>

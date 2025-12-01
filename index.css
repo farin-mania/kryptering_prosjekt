@@ -1,0 +1,79 @@
+#unencrypted {
+    background-color: gray;
+    width: 400px;
+    height: 200px;
+
+    textarea {
+        width: inherit;
+        height: inherit;
+        text-align: left;
+        resize: none;
+    }
+}
+
+
+#encrypted-section {
+    display: flex;
+    justify-content: center;
+    /* align-items: center;  */
+}
+
+#output {
+    margin-left: 2rem;
+    width: 400px;
+    height: 200px
+}
+
+
+.dropbtn {
+    margin-left: 2rem;
+    background-color: rgb(172, 184, 210);
+    color: white;
+    padding: 8px;
+    /* font-size: 16px; */
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 170px;
+    margin-left: 2rem;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+    a {
+        color: black;
+        padding: 6px 8px;
+        text-decoration: none;
+        display: block;
+    }
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown {
+    margin-bottom: 1rem;
+}
+
+#bruteforce-btn {
+    margin-left: 2rem;
+    background-color: rgb(172, 184, 210);
+    color: white;
+    padding: 8px;
+    border: none;
+}
+
+#middle {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#shiftAmount {
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
